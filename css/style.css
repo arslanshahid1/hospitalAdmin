@@ -1,0 +1,128 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+    overflow-x: hidden;
+}
+
+.logo{
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 0px 46px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 30px;
+    list-style: none;
+    background: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+    z-index: 100;
+}
+
+nav.white ul {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 2px 10px rgb(119, 119, 119);
+    z-index: 100;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    border-bottom: 1px solid rgb(53, 53, 53);
+    padding-bottom: 3px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav{
+        /* z-index: 100; */
+    }
+    nav ul {
+        margin-top: -90px;
+          max-height: 0px;
+          background: rgb(255, 255, 255);
+         
+    }
+
+    nav.white ul {
+          background: rgb(255, 255, 255);
+          /* z-index: 100; */
+          
+    }
+
+    .showing {
+          max-height: 34em;          
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+         
+    }
+
+    .menu-icon {
+          display: block;
+          background: rgba(0, 0, 0, 0);
+          color: rgb(0, 0, 0);
+
+    }
+
+}
+
+
+/* ============================================== NAVBAR END ================================ */
+
